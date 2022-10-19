@@ -59,5 +59,8 @@ p.button_name{
   background-color: pink;
   right: 50px;
   margin-top: 50px;
+  font-family: Ubuntu;
+  font-size: 23px;
+  color: #1B1B1B;
   display: none;
 }
