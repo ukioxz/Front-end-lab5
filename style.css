@@ -4,9 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 100px;
+  padding: 60px;
 }
 label {
   position: relative;
@@ -18,13 +19,36 @@ label {
 input{
   position: relative;
   width: 300px;
-  height: 50px;
+  height: 40px;
   border-radius: 50px;
   padding-left: 20px;
 }
 input[type="text"]{
   font-family: Ubuntu;
   font-size: 20px;
-  color: black;
+  color: #1B1B1B;
   margin-left: 10px;
+}
+.button-confirm{
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: pink;
+  margin-top:40px;
+  color: pink;
+  font-family: Ubuntu;
+  font-size: 23px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+p.button_name{
+  transform: translate(0, -50%);
+}
+.button-confirm:hover{
+  background-color: pink;
+  color: white;
+  transform: scale(1.05);
 }
