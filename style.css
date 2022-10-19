@@ -52,3 +52,12 @@ p.button_name{
   color: white;
   transform: scale(1.05);
 }
+.inputInfo{
+  position: fixed;
+  width: 300px;
+  height: 600px;
+  background-color: pink;
+  right: 50px;
+  margin-top: 50px;
+  display: none;
+}
