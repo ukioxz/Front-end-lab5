@@ -35,7 +35,7 @@ confirmBtn.addEventListener('click', (event) => {
     fullNameInput.style.border = "2px solid red";
     return false;
 
-  }else if (nameGroup != null && nameGroup.length < 4  || nameGroup.length > 4 ){
+  }else if (nameGroup != null && nameGroup.length < 4  || nameGroup.length > 5 ){
     alert('Заповніть назву групи');
     groupInput.style.border = "2px solid red";
     return false;

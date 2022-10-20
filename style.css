@@ -56,7 +56,6 @@ p.button_name{
   position: fixed;
   width: 300px;
   height: 600px;
-  background-color: pink;
   right: 50px;
   margin-top: 50px;
   font-family: Ubuntu;
@@ -72,9 +71,6 @@ table, td{
 }
 td{
   padding: 10px;
-}
-#variant:hover{
-  background-color: pink;
 }
 .color-cell{
   margin-top: 60px;
