@@ -2,6 +2,10 @@ let confirmBtn = document.querySelector('.button-confirm');
 let info = document.querySelector('.inputInfo');
 let myCell = document.getElementById('myVariant');
 let fullNameInput = document.getElementById('full_name');
+let groupInput = document.getElementById('group');
+let facultyInput = document.getElementById('faculty');
+let addressInput = document.getElementById('address');
+let telegramInput = document.getElementById('telegram');
 
 const allChar ="0123456789ABCDEF";
 let changeColorCell = document.querySelector('.color-cell');
@@ -10,6 +14,10 @@ let dblclickCell2 = document.getElementById('dblCell2');
 
 const confirmedInfo = () => {
   fullNameInput.style.border = "2px solid black";
+  groupInput.style.border = "2px solid black";
+  facultyInput.style.border = "2px solid black";
+  addressInput.style.border = "2px solid black";
+  telegramInput.style.border = "2px solid black";
 }
 
 confirmBtn.addEventListener('click', (event) => {
@@ -29,26 +37,32 @@ confirmBtn.addEventListener('click', (event) => {
 
   }else if (nameGroup != null && nameGroup.length < 4  || nameGroup.length > 4 ){
     alert('Заповніть назву групи');
+    groupInput.style.border = "2px solid red";
     return false;
 
   } else if (testAddress.test(nameAddress)){
     alert('Неправильна адреса');
+    addressInput.style.border = "2px solid red";
     return false;
 
   }else if (nameAddress != null && nameAddress.length < 3){
     alert('Заповніть адресу');
+    addressInput.style.border = "2px solid red";
     return false;
 
   }else if (nameFaculty != null && nameFaculty.length < 2){
     alert('Заповніть назву факультету');
+    facultyInput.style.border = "2px solid red";
     return false;
 
   }else if (testTelegram.test(nameTelegram)){
     alert('Неправильний нікнейм');
+    telegramInput.style.border = "2px solid red";
     return false;
 
   }else if (nameTelegram != null && nameTelegram.length < 2){
     alert('Заповніть нікнейм');
+    telegramInput.style.border = "2px solid red";
     return false;
 
   }else{
