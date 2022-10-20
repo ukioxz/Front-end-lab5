@@ -64,3 +64,21 @@ p.button_name{
   color: #1B1B1B;
   display: none;
 }
+table, td{
+  border: 1px solid black;
+  font-size: 24px;
+  margin-top: 100px;
+  margin-left: 41%;
+}
+td{
+  padding: 10px;
+}
+#variant:hover{
+  background-color: pink;
+}
+.color-cell{
+  margin-top: 60px;
+  margin-left: 41%;
+  border-radius: 0px;
+  padding: 0;
+}
